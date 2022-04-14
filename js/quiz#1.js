@@ -18,3 +18,7 @@ for ( let x = 0; x < psQuiz.length; x++ ) {
         correctAnswers++; 
     }
 }
+
+let result = `You got a total of ${correctAnswers} questions correct.`;
+
+document.querySelector('main').innerHTML = result;
