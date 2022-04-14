@@ -15,6 +15,6 @@ for ( let x = 0; x < psQuiz.length; x++ ) {
     let response = prompt(questions);
 
     if ( response === answers) {
-        correctAnswers++;
+        correctAnswers++; 
     }
 }
