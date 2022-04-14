@@ -4,3 +4,7 @@ const psQuiz = [
     ['What is your favorite FF on PS1?', '9'],
     ['How old were you when you got a PS1?', '8']
 ]
+
+let correct = [];
+let incorrect = [];
+let correctAnswers = 0;
