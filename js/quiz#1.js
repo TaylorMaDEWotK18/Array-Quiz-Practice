@@ -8,3 +8,13 @@ const psQuiz = [
 let correct = [];
 let incorrect = [];
 let correctAnswers = 0;
+
+for ( let x = 0; x < psQuiz.length; x++ ) {
+    let questions = psQuiz[x][0];
+    let answers = psQuiz[0][x];
+    let response = prompt(questions);
+
+    if ( response === answers) {
+        correctAnswers++;
+    }
+}
