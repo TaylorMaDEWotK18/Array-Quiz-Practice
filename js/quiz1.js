@@ -27,6 +27,7 @@ function testScore(arr) {
     for( let x = 0; x < arr.length; x++ ) {
         items = `<li>${questions}</li>`;
     }
+    return items;
 }
 
 let result = `<h1>You got a total of ${correctAnswers} questions correct.</h1>`;
