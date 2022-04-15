@@ -11,7 +11,7 @@ let correctAnswers = 0;
 
 for ( let x = 0; x < psQuiz.length; x++ ) {
     let questions = psQuiz[x][0];
-    let answers = psQuiz[0][x];
+    let answers = psQuiz[x][1];
     let response = prompt(questions);
 
     if ( response === answers) {
@@ -19,6 +19,6 @@ for ( let x = 0; x < psQuiz.length; x++ ) {
     }
 }
 
-let result = `You got a total of ${correctAnswers} questions correct.`;
+let result = `<h1>You got a total of ${correctAnswers} questions correct.</h1>`;
 
 document.querySelector('main').innerHTML = result;
