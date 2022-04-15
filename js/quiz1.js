@@ -25,7 +25,7 @@ for ( let x = 0; x < psQuiz.length; x++ ) {
 function testScore(arr) {
     items = ``;
     for( let x = 0; x < arr.length; x++ ) {
-        items = `<li>${questions}</li>`;
+        items += `<li>${arr[x]}</li>`;
     }
     return items;
 }
