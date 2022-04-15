@@ -16,9 +16,28 @@ for ( let x = 0; x < psQuiz.length; x++ ) {
 
     if ( response === answers) {
         correctAnswers++; 
+        correct.push(questions);
+    } else {
+        incorrect.push(questions);
+    }
+}
+
+function testScore(arr) {
+    items = ``;
+    for( let x = 0; x < arr.length; x++ ) {
+        items = `<li>${questions}</li>`;
     }
 }
 
 let result = `<h1>You got a total of ${correctAnswers} questions correct.</h1>`;
 
-document.querySelector('main').innerHTML = result;
+document.querySelector('main').innerHTML = `${result}
+    <h2>Questions you got right!</h2>
+    <ol>
+        ${testScore(correct)}
+    </ol>
+    <h2>INCORRECT Questions!</h2>
+    <ol>
+        ${testScore(incorrect)}
+    </ol>
+`;
