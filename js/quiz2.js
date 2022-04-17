@@ -34,3 +34,5 @@ if (ask === smashStars) {
     message = `Oh I'm sorry. Looks like ${ask} has already been taken. Please select again`
 }
 
+document.querySelector('h1').innerHTML = heading;
+document.querySelector('main').innerHTML = `<h2>${message}</h2>`;
