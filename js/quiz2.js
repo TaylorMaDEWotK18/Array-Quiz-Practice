@@ -23,18 +23,23 @@
 
 //Lets repeat and practice
 
-const smashStars = ['Fox', 'Mario', 'Samus', 'Ike', 'Link', 'Captian Falcon', 'Falco']
-const heading = 'Welcome to Smash Central! Please select your favorite Smash character and see if available!';
-document.querySelector('h1').innerHTML = heading;
-let message;
-const ask = prompt('What Smash character would you like to play as?');
+// const smashStars = ['Fox', 'Mario', 'Samus', 'Ike', 'Link', 'Captian Falcon', 'Falco']
+// const heading = 'Welcome to Smash Central! Please select your favorite Smash character and see if available!';
+// document.querySelector('h1').innerHTML = heading;
+// let message;
+// const ask = prompt('What Smash character would you like to play as?');
 
 
-if (smashStars.includes(ask)) {
-    message = `Yes! ${ask} is available! We'll get your game loaded with some New Challegers!`;
-} else {
-    message = `Oh I'm sorry. Looks like ${ask} has already been taken. Please select again`
-}
+// if (smashStars.includes(ask)) {
+//     message = `Yes! ${ask} is available! We'll get your game loaded with some New Challegers!`;
+// } else {
+//     message = `Oh I'm sorry. Looks like ${ask} has already been taken. Please select again`
+// }
 
 
-document.querySelector('main').innerHTML = `<h2>${message}</h2>`;
+// document.querySelector('main').innerHTML = `<h2>${message}</h2>`;
+
+
+//Pracitce run #3
+
+const reStars = ['Leon', 'Claire', 'Chris', 'Jill', 'Barry', 'Rebecca']
