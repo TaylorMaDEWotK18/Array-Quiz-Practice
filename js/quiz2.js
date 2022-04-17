@@ -27,12 +27,13 @@ const smashStars = ['Fox', 'Mario', 'Samus', 'Ike', 'Link', 'Captian Falcon', 'F
 const heading = 'Welcome to Smash Central! Please select your favorite Smash character and see if available!';
 let message;
 const ask = prompt('What Smash character would you like to play as?');
+document.querySelector('h1').innerHTML = heading;
 
-if (ask === smashStars) {
+if (smashStars.includes(ask)) {
     message = `Yes! ${ask} is available! We'll get your game loaded with some New Challegers!`;
 } else {
     message = `Oh I'm sorry. Looks like ${ask} has already been taken. Please select again`
 }
 
-document.querySelector('h1').innerHTML = heading;
+
 document.querySelector('main').innerHTML = `<h2>${message}</h2>`;
