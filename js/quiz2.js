@@ -43,3 +43,14 @@
 //Pracitce run #3
 
 const reStars = ['Leon', 'Claire', 'Chris', 'Jill', 'Barry', 'Rebecca']
+
+let message;
+const ask = prompt('What is your favorite Resident Evil character?');
+
+if(reStars.includes(ask)) {
+    message = `Sick! ${ask} has to be the GOAT of RE!`;
+} else {
+    message = `EWWW sorry, ${ask} is pretty lame. Keep shootin! (Lol, pun intended)`
+}
+
+document.querySelector('main').innerHTML = `<h1>${message}</h1>`;
