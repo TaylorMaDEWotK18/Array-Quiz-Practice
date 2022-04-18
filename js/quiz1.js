@@ -58,4 +58,14 @@ let correctAnswers = 0;
 
 for( let x = 0; x < reAsks.length; x++) {
     let questions = prompt(`${reAsks[x][0]}`);
+    let answers = reAsks[x][1];
+
+    if(questions === answers) {
+        correctAnswers++;
+        correct.push(reAsks[x]);
+    } else {
+        incorrect.push(reAsks[x]);
+    }
 }
+
+console.log(correctAnswers);
