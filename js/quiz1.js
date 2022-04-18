@@ -68,4 +68,9 @@ for( let x = 0; x < reAsks.length; x++) {
     }
 }
 
-console.log(correctAnswers);
+function listQuestions(arr) {
+    items = ``;
+    for( let x = 0; x < arr.length; x++) {
+        items = `<li>${questions}</li>`;
+    }
+}
