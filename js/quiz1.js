@@ -74,3 +74,14 @@ function listQuestions(arr) {
         items = `<li>${questions}</li>`;
     }
 }
+
+document.querySelector('main').innerHTML = `
+    <h2><strong>Correct Questions</strong></h2>
+    <ol>
+        ${listQuestions(correct)};
+    </ol>
+    <h2><strong>InCorrect Questions</strong></h2>
+    <ol>
+        ${listQuestions(incorrect)};
+    </ol>
+`
