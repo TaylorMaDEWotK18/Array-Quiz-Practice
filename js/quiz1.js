@@ -73,6 +73,7 @@ function listQuestions(arr) {
     for( let x = 0; x < arr.length; x++) {
         items = `<li>${questions}</li>`;
     }
+    return items;
 }
 
 document.querySelector('main').innerHTML = `
