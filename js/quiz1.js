@@ -42,3 +42,12 @@ document.querySelector('main').innerHTML = `${result}
         ${testScore(incorrect)}
     </ol>
 `;
+
+// Practice run #2
+
+const reAsks = [
+    ['What is your favorite character from RE1?', 'Chris'],
+    ['What is your favorite character from RE2?', 'Leon'],
+    ['What Nemesis remake very good?', 'It was, but too short!'],
+    ['Favorite enemy from RE4?', 'Lake Monster']
+]
