@@ -71,7 +71,7 @@ for( let x = 0; x < reAsks.length; x++) {
 function listQuestions(arr) {
     items = ``;
     for( let x = 0; x < arr.length; x++) {
-        items = `<li>${questions}</li>`;
+        items += `<li>${reAsks[x][0]}</li>`;
     }
     return items;
 }
@@ -79,10 +79,10 @@ function listQuestions(arr) {
 document.querySelector('main').innerHTML = `
     <h2><strong>Correct Questions</strong></h2>
     <ol>
-        ${listQuestions(correct)};
+        ${listQuestions(correct)}
     </ol>
     <h2><strong>InCorrect Questions</strong></h2>
     <ol>
-        ${listQuestions(incorrect)};
+        ${listQuestions(incorrect)}
     </ol>
 `
