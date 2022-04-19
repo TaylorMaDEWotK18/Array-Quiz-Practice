@@ -57,21 +57,22 @@ let incorrect = [];
 let correctAnswers = 0;
 
 for( let x = 0; x < reAsks.length; x++) {
-    let questions = prompt(`${reAsks[x][0]}`);
+    let questions = reAsks[x][0];
     let answers = reAsks[x][1];
+    let response = prompt(questions);
 
-    if(questions === answers) {
+    if(response === answers) {
         correctAnswers++;
-        correct.push(reAsks[x]);
+        correct.push(questions);
     } else {
-        incorrect.push(reAsks[x]);
+        incorrect.push(questions);
     }
 }
 
 function listQuestions(arr) {
     items = ``;
     for( let x = 0; x < arr.length; x++) {
-        items += `<li>${reAsks[x][0]}</li>`;
+        items += `<li>${arr[x]}</li>`;
     }
     return items;
 }
