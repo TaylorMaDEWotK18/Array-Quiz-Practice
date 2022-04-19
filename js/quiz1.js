@@ -76,6 +76,7 @@ function listQuestions(arr) {
     return items;
 }
 
+document.querySelector('h1').innerHTML = `Looks like you got a total of ${correctAnswers} of the questions correct!`
 document.querySelector('main').innerHTML = `
     <h2><strong>Correct Questions</strong></h2>
     <ol>
