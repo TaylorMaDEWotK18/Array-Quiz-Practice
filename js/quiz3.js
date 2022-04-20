@@ -22,9 +22,9 @@
 const fondMemGames = ['Star Fox', 'Super Mario World', 'Super Mario 3', 'RE2', 'Star Craft', 'Half-Life', 'Final Fantasy 9', 'Gears of War']
 
 let message;
+const response = prompt('What game brings back nostalgia from your childhood?');
 
-for ( let x = 0; x < fondMemGames.includes(response); x++) {
-    response = prompt('What game brings back nostalgia from your childhood?');
+
     if (response === fondMemGames[1]) {
         message = `Wow... That Christmas Eve with ${response} was one of the best memories ever.. Thanks Dad`;
     } else if (response === fondMemGames[6]) {
@@ -32,10 +32,10 @@ for ( let x = 0; x < fondMemGames.includes(response); x++) {
     } else if (response === fondMemGames[4]) {
         message = `Man do you remember the countless hours playing ${response} with Hugh... So freaking good!`;
     } else if (fondMemGames.includes(response)) {
-        message = `Amazing choice! ${response} is SUCH a good choice!`;
+        message = `Amazing choice! ${response} is SUCH a good game!`;
     } else {
         message = `UWWWW... BOO to ${response}. That game is LAME!`;
     }
-} 
+ 
 
 document.querySelector('h1').innerHTML = message;
