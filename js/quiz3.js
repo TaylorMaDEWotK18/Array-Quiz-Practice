@@ -25,5 +25,17 @@ let message;
 
 for ( let x = 0; x < fondMemGames.includes(response); x++) {
     response = prompt('What game brings back nostalgia from your childhood?');
+    if (response === fondMemGames[1]) {
+        message = `Wow... That Christmas Eve with ${response} was one of the best memories ever.. Thanks Dad`;
+    } else if (response === fondMemGames[6]) {
+        message = `SHEESH! You remember telling yourself that lesson of hard work mowin the lawn to make sure you could get that ${response}?`;
+    } else if (response === fondMemGames[4]) {
+        message = `Man do you remember the countless hours playing ${response} with Hugh... So freaking good!`;
+    } else if (fondMemGames.includes(response)) {
+        message = `Amazing choice! ${response} is SUCH a good choice!`;
+    } else {
+        message = `UWWWW... BOO to ${response}. That game is LAME!`;
+    }
+} 
 
-}
+document.querySelector('h1').innerHTML = message;
