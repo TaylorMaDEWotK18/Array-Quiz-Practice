@@ -7,7 +7,9 @@ const request = prompt('What is a game that brings a lot of nostalgia to you fro
 
 if (request === fondMemGames[2]) {
     message = `Resident Evil has to be one of the greatest series of all time! And RE2 takes GOLD!`;
-} else if(fondMemGames.includes(request)) {
+} else if (request === fondMemGames[3]) {
+    message = `Wow... How amazing was ${request}.. The first time bootin up that PS2, playing for hours and hours.. Amazing`
+} else if (fondMemGames.includes(request)) {
     message = `Man ${request} was amazing! Great game!`;
 } else {
     message = `Nope, ${request} wasn't cool enough!`;
