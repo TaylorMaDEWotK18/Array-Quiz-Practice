@@ -20,3 +20,10 @@
 // Next attempt I'm going to build similar program only using a for loop to cycle through
 
 const fondMemGames = ['Star Fox', 'Super Mario World', 'Super Mario 3', 'RE2', 'Star Craft', 'Half-Life', 'Final Fantasy 9', 'Gears of War']
+
+let message;
+
+for ( let x = 0; x < fondMemGames.includes(response); x++) {
+    response = prompt('What game brings back nostalgia from your childhood?');
+
+}
