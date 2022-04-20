@@ -5,11 +5,11 @@ const fondMemGames = ['Star Fox', 'Super Mario 3', 'RE2', 'The Bouncer', 'Final 
 let message;
 const request = prompt('What is a game that brings a lot of nostalgia to you from your childhood?');
 
-if(fondMemGames.includes(request)) {
-    message = `Man ${request} was amazing! Great game!`;
-} else if (request === fondMemGames.indexOf(2)) {
+if (request === fondMemGames.indexOf[2]) {
     message = `Resident Evil has to be one of the greatest series of all time! And RE2 takes GOLD!`;
-}else {
+} else if(fondMemGames.includes(request)) {
+    message = `Man ${request} was amazing! Great game!`;
+} else {
     message = `Nope, ${request} wasn't cool enough!`;
 }
 
