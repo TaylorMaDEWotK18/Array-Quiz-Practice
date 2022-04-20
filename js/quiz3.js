@@ -10,3 +10,5 @@ if(fondMemGames.includes(request)) {
 } else {
     message = `Nope, ${request} wasn't cool enough!`;
 }
+
+document.querySelector('h1').innerHTML = message;
