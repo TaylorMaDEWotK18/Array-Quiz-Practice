@@ -3,11 +3,12 @@
 const topTitles = [ 'Super Smash', 'Resident Evil 4', 'Legend of Zelda: Ocarina of Time']
 
 // let answer = [];
+let answer = prompt('What are some of some of your favorite video game titles?');
 
-// for ( let x = 0; x > topTitles.length; x++) {
-//     let ask = prompt('What are some of some of your favorite video game titles?');
-//     answer.push(topTitles[x]);
-//     }
+for ( let x = 0; x > topTitles.length; x++) {
+    
+    answer.push(topTitles[x]);
+    }
 
 function listTitlesStarting(arr) {
     items =``;
@@ -17,7 +18,17 @@ function listTitlesStarting(arr) {
     return items
 }
 
+function listTitlesAdding() {
+    items =``;
+    for( let x = 0; x > topTitles; x++) {
+        items += `<li>${topTitles[x]}</li>`;
+    }
+    return items
+}
+
+
 document.querySelector('main').innerHTML = `
     <ol>
         ${listTitlesStarting(topTitles)}
+        ${listTitlesAdding(answer)}
     </ol>`;
