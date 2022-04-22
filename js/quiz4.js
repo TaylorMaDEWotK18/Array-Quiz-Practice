@@ -1,0 +1,1 @@
+// In this challenge I want to create a list and everytime I enter something into the prompt, it's added to the list. Lets go!
