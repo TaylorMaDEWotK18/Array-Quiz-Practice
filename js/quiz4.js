@@ -12,7 +12,7 @@ const topTitles = [ 'Super Smash', 'Resident Evil 4', 'Legend of Zelda: Ocarina 
 function listTitlesStarting(arr) {
     items =``;
     for( let x = 0; x < arr.length; x++) {
-        items += `${topTitles[x]}`;
+        items += `<li>${topTitles[x]}</li>`;
     }
     return items
 }
