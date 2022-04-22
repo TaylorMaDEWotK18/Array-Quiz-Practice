@@ -2,4 +2,22 @@
 
 const topTitles = [ 'Super Smash', 'Resident Evil 4', 'Legend of Zelda: Ocarina of Time']
 
-function listTitles()
+// let answer = [];
+
+// for ( let x = 0; x > topTitles.length; x++) {
+//     let ask = prompt('What are some of some of your favorite video game titles?');
+//     answer.push(topTitles[x]);
+//     }
+
+function listTitlesStarting(arr) {
+    items =``;
+    for( let x = 0; x < arr.length; x++) {
+        items += `${topTitles[x]}`;
+    }
+    return items
+}
+
+document.querySelector('main').innerHTML = `
+    <ol>
+        ${listTitlesStarting(topTitles)}
+    </ol>`;
